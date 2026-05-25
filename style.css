@@ -395,12 +395,14 @@ a {
 .pricing-card {
   padding: 36px;
   border-radius: 34px;
-  background: #ffffff;
-  color: #08090c;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 280px;
+  border: 1px solid rgba(255,255,255,0.11);
 }
 
 .pricing-card span {
@@ -420,7 +422,7 @@ a {
 }
 
 .pricing-card p {
-  color: rgba(8, 9, 12, 0.62);
+  color: rgba(255,255,255,0.62);
   line-height: 1.65;
   font-weight: 600;
 }
