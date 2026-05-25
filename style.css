@@ -595,3 +595,75 @@ a {
     height: 40px;
   }
 }
+/* ===== CLEAN TEXT LOGO ===== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.logo-symbol {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.12);
+}
+
+.logo-symbol::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.logo-symbol span {
+  position: relative;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.logo-symbol span:last-child {
+  color: #38bdf8;
+  margin-left: -2px;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.logo-name small {
+  margin-top: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.46);
+}
+
+@media (max-width: 600px) {
+  .logo-name {
+    display: none;
+  }
+
+  .logo-symbol {
+    width: 42px;
+    height: 42px;
+  }
+}
