@@ -667,3 +667,50 @@ a {
     height: 42px;
   }
 }
+/* ===== SIMPLE TEXT LOGO FIX ===== */
+
+.header {
+  height: 82px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 3px !important;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1 !important;
+}
+
+.logo-main {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.4px !important;
+}
+
+.logo-sub {
+  color: #38bdf8 !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase;
+}
+
+.logo-mark,
+.logo-text,
+.logo-symbol,
+.logo-name {
+  display: none !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
